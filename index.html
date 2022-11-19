@@ -1,525 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Complete Responsive Pizza Shop Website Design</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Travel Agency Website named Gypsy Design</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-
+    
 <!-- header section starts  -->
 
 <header class="header">
 
-   <section class="flex">
+    <a href="#" class="logo"> <i class="fas fa-paper-plane"></i> Gypsy </a>
 
-      <a href="#home" class="logo">Pizza Palace</a>
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="searchBox">
+        <label for="searchBox" class="fas fa-search"></label>
+    </form>
 
-      <nav class="navbar">
-         <a href="#home">home</a>
-         <a href="#about">about</a>
-         <a href="#menu">menu</a>
-         <a href="#order">order</a>
-         <a href="#faq">faq</a>
-      </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-moon" id="theme-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
 
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="order-btn" class="fas fa-box"></div>
-         <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
-      </div>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#pricing">pricing</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+    </nav>
 
-   </section>
+    <form action="" class="login-form">
+
+        <div class="inputBox">
+            <span>username</span>
+            <input type="text" placeholder="enter your name">
+        </div>
+
+        <div class="inputBox">
+            <span>password</span>
+            <input type="password" placeholder="enter your password">
+        </div>
+
+        <div class="remember">
+            <input type="checkbox" name="" id="login-remember">
+            <label for="login-remember">remember me</label>
+        </div>
+
+        <input type="submit" class="btn" value="login">
+
+    </form>
 
 </header>
 
 <!-- header section ends -->
 
-<div class="user-account">
+<!-- home section starts  -->
 
-   <section>
+<section class="home" id="home">
 
-      <div id="close-account"><span>close</span></div>
+    <div class="image" data-aos="fade-down">
+        <img src="images/home-img.svg" alt="">
+    </div>
 
-      <div class="user">
-         <p><span>you are not logged in now!</span></p>
-      </div>
+    <div class="content" data-aos="fade-up">
+        <h3>adventure is worthwhile</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo eius inventore reprehenderit alias eos facilis, ipsa est asperiores repellendus!</p>
+        <a href="#" class="btn">explore now</a>
+    </div>
 
-      <div class="display-orders">
-         <p>pizza-1 <span>( ₹149/- x 2 )</span></p>
-         <p>pizza 03 <span>( ₹249/- x 1 )</span></p>
-         <p>pizza 06 <span>( ₹299/- x 4 )</span></p>
-         <p>pizza 07 <span>( ₹299/- x 1 )</span></p>
-      </div>
+</section>
 
-      <div class="flex">
+<!-- home section ends -->
 
-         <form action="" method="post">
-            <h3>login now</h3>
-            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
-            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
-            <input type="submit" value="login now" name="login" class="btn">
-         </form>
+<!-- filter form section starts  -->
 
-         <form action="" method="post">
-            <h3>register now</h3>
-            <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
-            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
-            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
-            <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
-            <input type="submit" value="register now" name="register" class="btn">
-         </form>
+<section class="form-container" data-aos="zoom-in">
 
-      </div>
+    <form action="">
 
-   </section>
+        <div class="inputBox">
+            <span>where to</span>
+            <input type="text" placeholder="search places">
+        </div>
 
-</div>
+        <div class="inputBox">
+            <span>arrivals</span>
+            <input type="date">
+        </div>
 
-<div class="my-orders">
+        <div class="inputBox">
+            <span>leaving</span>
+            <input type="date">
+        </div>
 
-   <section>
+        <input type="submit" value="book now" class="btn">
 
-      <div id="close-orders"><span>close</span></div>
+    </form>
 
-      <h3 class="title"> my orders </h3>
+</section>
 
-      <div class="box">
-         <p>placed on : <span>06/04/2022</span> </p>
-         <p>name : <span>Dev Patel</span> </p>
-         <p>number : <span>9875863423</span></p>
-         <p>address : <span>A-123, Silver Gold, Rander, Surat, Gujarat, India - 395004</span></p>
-         <p>payment method : <span>cash on delivery</span></p>
-         <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
-         <p>total price : <span>$11/-</span></p>
-         <p>payment status : <span style="color: var(--red);">pending</span> </p>
-      </div>
+<!-- filter form section ends -->
 
-      <div class="box">
-         <p>placed on : <span>06/04/2022</span> </p>
-         <p>name : <span>Kishorbhai Patel</span> </p>
-         <p>number : <span>8989785863</span></p>
-         <p>address : <span>flat no. 320, bulding B, Platinum House, Surat, Gujarat, India - 395005</span></p>
-         <p>payment method : <span>cash on delivery</span></p>
-         <p>your orders : <span>pizza 01 $3/- x 2, pizza 03 $2/- x 1, pizza 06 $4/- x 4, pizza 07, $2/- x 1</span></p>
-         <p>total price : <span>$11/-</span></p>
-         <p>payment status : <span style="color: var(--red);">pending</span> </p>
-      </div>
+<!-- packages section starts  -->
 
-   </section>
+<section class="packages" id="packages">
 
-</div>
+    <h1 class="heading"> our <span>packages</span> </h1>
 
-<div class="shopping-cart">
+    <div class="box-container">
 
-   <section>
-
-      <div id="close-cart"><span>close</span></div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-1.jpg" alt="">
-         <div class="content">
-            <p>pizza-1 <span>( ₹149/- x 2 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
-         </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-3.jpg" alt="">
-         <div class="content">
-            <p>pizza-3 <span>( ₹199/- x 1 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
-         </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-6.jpg" alt="">
-         <div class="content">
-            <p>pizza-6 <span>( ₹249/- x 2 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
-         </div>
-      </div>
-
-      <div class="box">
-         <a href="#" class="fas fa-times"></a>
-         <img src="images/pizza-7.jpg" alt="">
-         <div class="content">
-            <p>pizza-7 <span>( ₹299/- x 1 )</span></p>
-            <form action="" method="post">
-               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
-               <button type="submit" class="fas fa-edit" name="update_qty"></button>
-            </form>
-         </div>
-      </div>
-
-      <a href="#order" class="btn">order now</a>
-
-   </section>
-
-</div>
-
-<div class="home-bg">
-
-   <section class="home" id="home">
-
-      <div class="slide-container">
-
-         <div class="slide active">
+        <div class="box" data-aos="fade-up">
             <div class="image">
-               <img src="images/home-img-1.png" alt="">
+                <img src="images/p-1.jpg" alt="">
+                <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
             </div>
             <div class="content">
-               <h3>homemade Pepperoni Pizza</h3>
-               <div class="fas fa-angle-left" onclick="prev()"></div>
-               <div class="fas fa-angle-right" onclick="next()"></div>
+                <div class="price"> 290.99 <span>350.99</span> </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
+                <a href="#" class="btn"> book now</a>
             </div>
-         </div>
+        </div>
 
-         <div class="slide">
+        <div class="box" data-aos="fade-up">
             <div class="image">
-               <img src="images/home-img-2.png" alt="">
+                <img src="images/p-2.jpg" alt="">
+                <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
             </div>
             <div class="content">
-               <h3>Pizza With Mushrooms</h3>
-               <div class="fas fa-angle-left" onclick="prev()"></div>
-               <div class="fas fa-angle-right" onclick="next()"></div>
+                <div class="price"> 290.99 <span>350.99</span> </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
+                <a href="#" class="btn"> book now</a>
             </div>
-         </div>
+        </div>
 
-         <div class="slide">
+        <div class="box" data-aos="fade-up">
             <div class="image">
-               <img src="images/home-img-3.png" alt="">
+                <img src="images/p-3.jpg" alt="">
+                <h3> <i class="fas fa-map-marker-alt"></i> sydney </h3>
             </div>
             <div class="content">
-               <h3>Mascarpone And Mushrooms</h3>
-               <div class="fas fa-angle-left" onclick="prev()"></div>
-               <div class="fas fa-angle-right" onclick="next()"></div>
+                <div class="price"> 290.99 <span>350.99</span> </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
+                <a href="#" class="btn"> book now</a>
             </div>
-         </div>
+        </div>
 
-      </div>
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/p-4.jpg" alt="">
+                <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
+            </div>
+            <div class="content">
+                <div class="price"> 290.99 <span>350.99</span> </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
+                <a href="#" class="btn"> book now</a>
+            </div>
+        </div>
 
-   </section>
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/p-5.jpg" alt="">
+                <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
+            </div>
+            <div class="content">
+                <div class="price"> 290.99 <span>350.99</span> </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
+                <a href="#" class="btn"> book now</a>
+            </div>
+        </div>
 
-</div>
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/p-6.jpg" alt="">
+                <h3> <i class="fas fa-map-marker-alt"></i> egypt </h3>
+            </div>
+            <div class="content">
+                <div class="price"> 290.99 <span>350.99</span> </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae.</p>
+                <a href="#" class="btn"> book now</a>
+            </div>
+        </div>
 
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-   <h1 class="heading">about us</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <img src="images/about-1.svg" alt="">
-         <h3>made with love</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
-         <a href="#menu" class="btn">our menu</a>
-      </div>
-
-      <div class="box">
-         <img src="images/about-2.svg" alt="">
-         <h3>30 minutes delivery</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
-         <a href="#menu" class="btn">our menu</a>
-      </div>
-
-      <div class="box">
-         <img src="images/about-3.svg" alt="">
-         <h3>share with freinds</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
-         <a href="#menu" class="btn">our menu</a>
-      </div>
-
-   </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- menu section starts  -->
-
-<section id="menu" class="menu">
-
-   <h1 class="heading">our menu</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <div class="price">₹<span>149</span>/-</div>
-         <img src="images/pizza-1.jpg" alt="">
-         <div class="name">pizza 1</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-      <div class="box">
-         <div class="price">₹<span>199</span>/-</div>
-         <img src="images/pizza-2.jpg" alt="">
-         <div class="name">pizza 2</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-      <div class="box">
-         <div class="price">₹<span>199</span>/-</div>
-         <img src="images/pizza-3.jpg" alt="">
-         <div class="name">pizza 3</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-      <div class="box">
-         <div class="price">₹<span>249</span>/-</div>
-         <img src="images/pizza-4.jpg" alt="">
-         <div class="name">pizza 4</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-      <div class="box">
-         <div class="price">₹<span>299</span>/-</div>
-         <img src="images/pizza-5.jpg" alt="">
-         <div class="name">pizza 5</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-      <div class="box">
-         <div class="price">₹<span>299</span>/-</div>
-         <img src="images/pizza-6.jpg" alt="">
-         <div class="name">pizza 6</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-      <div class="box">
-         <div class="price">₹<span>249</span>/-</div>
-         <img src="images/pizza-7.jpg" alt="">
-         <div class="name">pizza 7</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-      <div class="box">
-         <div class="price">₹<span>249</span>/-</div>
-         <img src="images/pizza-8.jpg" alt="">
-         <div class="name">pizza 8</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-      <div class="box">
-         <div class="price">₹<span>299</span>/-</div>
-         <img src="images/pizza-9.jpg" alt="">
-         <div class="name">pizza 9</div>
-         <form action="" method="post">
-            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-         </form>
-      </div>
-
-   </div>
+    </div>
 
 </section>
 
-<!-- menu section ends -->
+<!-- packages section ends -->
 
-<!-- order section starts  -->
+<!-- services section starts  -->
 
-<section class="order" id="order">
+<section class="services" id="services">
 
-   <h1 class="heading">order now</h1>
+    <h1 class="heading"> our <span>services</span> </h1>
 
-   <form action="" method="post">
+    <div class="box-container">
 
-      <div class="display-orders">
-         <p>pizza-1 <span>( $3/- x 2 )</span></p>
-         <p>pizza 03 <span>( $2/- x 1 )</span></p>
-         <p>pizza 06 <span>( $4/- x 4 )</span></p>
-         <p>pizza 07 <span>( $2/- x 1 )</span></p>
-      </div>
+        <div class="box" data-aos="zoom-in">
+            <span>01</span>
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
 
-      <div class="flex">
-         <div class="inputBox">
-            <span>your name :</span>
-            <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
-         </div>
-         <div class="inputBox">
-            <span>your number :</span>
-            <input type="number" name="number" class="box" required placeholder="enter your number" min="0">
-         </div>
-         <div class="inputBox">
-            <span>payment method</span>
-            <select name="method" class="box">
-               <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card</option>
-               <option value="paytm">paytm</option>
-               <option value="paypal">paypal</option>
-            </select>
-         </div>
-         <div class="inputBox">
-            <span>address line 01 :</span>
-            <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
-         </div>
-         <div class="inputBox">
-            <span>address line 02 :</span>
-            <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
-         </div>
-         <div class="inputBox">
-            <span>pin code :</span>
-            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
-         </div>
-      </div>
+        <div class="box" data-aos="zoom-in">
+            <span>02</span>
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
 
-      <input type="submit" value="order now" class="btn" name="order">
+        <div class="box" data-aos="zoom-in">
+            <span>03</span>
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
 
-   </form>
+        <div class="box" data-aos="zoom-in">
+            <span>04</span>
+            <i class="fas fa-globe"></i>
+            <h3>around the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
 
-</section>
+        <div class="box" data-aos="zoom-in">
+            <span>05</span>
+            <i class="fas fa-hiking"></i>
+            <h3>new adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
 
-<!-- order section ends -->
+        <div class="box" data-aos="zoom-in">
+            <span>01</span>
+            <i class="fas fa-bullhorn"></i>
+            <h3>safety guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+        </div>
 
-<!-- faq section starts  -->
-
-<section class="faq" id="faq">
-
-   <h1 class="heading">FAQ</h1>
-
-   <div class="accordion-container">
-
-      <div class="accordion active">
-         <div class="accordion-heading">
-            <span>how does it work?</span>
-            <i class="fas fa-angle-down"></i>
-         </div>
-         <p class="accrodion-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
-         </p>
-      </div>
-
-      <div class="accordion">
-         <div class="accordion-heading">
-            <span>how long does it take for delivery?</span>
-            <i class="fas fa-angle-down"></i>
-         </div>
-         <p class="accrodion-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
-         </p>
-      </div>
-
-      <div class="accordion">
-         <div class="accordion-heading">
-            <span>can I order for huge parties?</span>
-            <i class="fas fa-angle-down"></i>
-         </div>
-         <p class="accrodion-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
-         </p>
-      </div>
-
-      <div class="accordion">
-         <div class="accordion-heading">
-            <span>how much protein it contains?</span>
-            <i class="fas fa-angle-down"></i>
-         </div>
-         <p class="accrodion-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
-         </p>
-      </div>
-
-
-      <div class="accordion">
-         <div class="accordion-heading">
-            <span>is it cooked with oil?</span>
-            <i class="fas fa-angle-down"></i>
-         </div>
-         <p class="accrodion-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
-         </p>
-      </div>
-
-   </div>
+    </div>
 
 </section>
 
-<!-- faq section ends -->
+<!-- services section ends -->
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+
+    <h1 class="heading"> our <span>pricing</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="zoom-in-up">
+            <h3> basic plan </h3>
+            <div class="price">
+                <span>$</span>
+                <span class="amount">30</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>10 days</li>
+                <li>food and drinks</li>
+                <li>safty guide</li>
+                <li>insurance</li>
+                <li>luxury hotel</li>
+            </ul>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up">
+            <h3> standard plan </h3>
+            <div class="price">
+                <span>$</span>
+                <span class="amount">50</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>20 days</li>
+                <li>food and drinks</li>
+                <li>safty guide</li>
+                <li>insurance</li>
+                <li>luxury hotel</li>
+            </ul>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up">
+            <h3> premium plan </h3>
+            <div class="price">
+                <span>$</span>
+                <span class="amount">90</span>
+                <span>/mo</span>
+            </div>
+            <ul>
+                <li>30 days</li>
+                <li>food and drinks</li>
+                <li>safty guide</li>
+                <li>insurance</li>
+                <li>luxury hotel</li>
+            </ul>
+            <a href="#" class="btn">choose plan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> client's <span>review</span> </h1>
+
+    <div class="swiper-container review-slider" data-aos="zoom-in">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="images/pic-1.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/pic-2.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/pic-3.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/pic-4.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sunt eligendi est, dicta maiores amet nihil perferendis, incidunt maxime aspernatur exercitationem laboriosam odio dolores magnam ratione atque, quasi odit. Hic!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <form action="" data-aos="zoom">
+
+        <div class="inputBox">
+            <input type="text" placeholder="name" data-aos="fade-up">
+            <input type="email" placeholder="email" data-aos="fade-up">
+        </div>
+
+        <div class="inputBox">
+            <input type="number" placeholder="number" data-aos="fade-up">
+            <input type="text" placeholder="subject" data-aos="fade-up">
+        </div>
+
+        <textarea name="" placeholder="your message" id="" cols="30" rows="10" data-aos="fade-up"></textarea>
+        
+        <input type="submit" value="send message" class="btn">
+
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blog section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/blog-1.svg" alt="">
+            </div>
+            <div class="content">
+                <h3>explore the world now, adventure awaits</h3>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/blog-2.svg" alt="">
+            </div>
+            <div class="content">
+                <h3>explore the world now, adventure awaits</h3>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="image">
+                <img src="images/blog-3.svg" alt="">
+            </div>
+            <div class="content">
+                <h3>explore the world now, adventure awaits</h3>
+                <a href="#" class="btn">read more</a>
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blog section ends -->
 
 <!-- footer section starts  -->
 
 <section class="footer">
 
-   <div class="box-container">
+    <div class="box-container">
 
-      <div class="box">
-         <i class="fas fa-phone"></i>
-         <h3>phone number</h3>
-         <p>+91 9876543210</p>
-         <p>+91 9248598795</p>
-      </div>
+        <div class="box" data-aos="fade-up">
+            <h3>our branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> canada </a>
+        </div>
 
-      <div class="box">
-         <i class="fas fa-map-marker-alt"></i>
-         <h3>our address</h3>
-         <p>Surat, Gujarat, India - 395005</p>
-      </div>
+        <div class="box" data-aos="fade-up">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> packages </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> pricing </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> contact </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> blogs </a>
+        </div>
 
-      <div class="box">
-         <i class="fas fa-clock"></i>
-         <h3>opening hours</h3>
-         <p>10:00am to 11:00pm</p>
-      </div>
+        <div class="box" data-aos="fade-up">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +144-555-6666 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelop"></i> yashbeladiya@yahoo.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Surat, Gujarat, India </a>
+        </div>
 
-      <div class="box">
-         <i class="fas fa-envelope"></i>
-         <h3>email address</h3>
-         <p>yashbeladiya@gmail.com</p>
-         <p>vasubeladiya@gmail.com</p>
-      </div>
+        <div class="box" data-aos="fade-up">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
 
-   </div>
+    </div>
 
-   <div class="credit">
-      &copy; copyright @ 2022 by <span>Yash Beladiya</span> | all rights reserved!
-   </div>
+    <div class="credit"> creadet by <span>Mr. Yash Beladiya</span> | all rights reserved </div>
 
 </section>
 
@@ -543,8 +551,25 @@
 
 
 
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+
+<script>
+
+AOS.init({
+    duration:800,
+    delay:400
+});
+
+</script>
 
 </body>
 </html>
